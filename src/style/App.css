@@ -1,6 +1,100 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+/* Variables */
+:root {
+  /* COLORS */
+  --body-bg: hsl(218, 23%, 16%);
+  --wrapper-bg: hsl(217, 19%, 24%);
+  --light-cyon: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  /* MEDIA QUERIE */
+  --md: 768px;
+  --sm: 375px;
+}
+
+
+body {
+  background: var(--body-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.wrapper {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  /* margin: 0 auto; */
+  padding: 2rem;
+  border-radius: 1rem;
+  background: var(--wrapper-bg);
+  color: var(--light-cyon);
+  box-shadow: 5px 5px 15px rgba(24, 24, 24, 0.459);
+}
+
+.advice-id {
+  color: var(--neon-green);
+  font-weight: 800;
+}
+
+.advice {
+  font-size: 25px;
+  margin: 1.2rem 0;
+}
+
+.wrapper>svg {
+  margin-bottom: 1.5rem;
+}
+
+.icon-dice {
+  position: absolute;
+  bottom: -3.5rem;
+  left: 50.9%;
+  transform: translate(-50%, -50%);
+  background: var(--neon-green);
+  line-height: 24px;
+  padding: 1rem .9rem .5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-dice svg{
+  align-items: center;
+}
+
+.icon-dice:hover{
+  box-shadow: 1px 1px 20px var(--neon-green);
+  transition: .2s ease;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 400px;
+    padding: 3rem 5px;
+  }
+
+  .advice {
+    font-size: 24px;
+  }
+
+  .icon-dice {
+    left: 50%;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    max-width: 350px;
+  }
 }
