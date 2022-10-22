@@ -13,4 +13,4 @@ Click to [view](https://warisaremou.github.io/advice-generator-app/)
 
 ### Api link
 
-[https://api.adviceslip.com/advice](https://api.adviceslip.com/advice)
+[https://api.adviceslip.com](https://api.adviceslip.com)
