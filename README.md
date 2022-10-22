@@ -10,3 +10,7 @@ Click to [view](https://warisaremou.github.io/advice-generator-app/)
 
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+
+### Api link
+
+[https://api.adviceslip.com/advice](https://api.adviceslip.com/advice)
