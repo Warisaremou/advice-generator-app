@@ -12,10 +12,6 @@
   --wrapper-bg: hsl(217, 19%, 24%);
   --light-cyon: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
-
-  /* MEDIA QUERIE */
-  --md: 768px;
-  --sm: 375px;
 }
 
 
@@ -56,6 +52,32 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.loader {
+  display: block;
+  font-size: 16px;
+  color: var(--neon-green);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  animation: loader .8s .8s linear infinite alternate;
+}
+.hidden{
+  display: none;
+}
+
+/* Animation */
+@keyframes loader {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: .5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .icon-dice {
   position: absolute;
   bottom: -3.5rem;
@@ -68,11 +90,11 @@ body {
   cursor: pointer;
 }
 
-.icon-dice svg{
+.icon-dice svg {
   align-items: center;
 }
 
-.icon-dice:hover{
+.icon-dice:hover {
   box-shadow: 1px 1px 20px var(--neon-green);
   transition: .2s ease;
 }
