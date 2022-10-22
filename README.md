@@ -2,7 +2,7 @@
 
 Advice-generator-app to be motivated in any circumstance
 
-### Screenshot
+### View my app
 
 ![](./screenshot.jpg)
 
